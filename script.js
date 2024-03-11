@@ -5,7 +5,6 @@ const scaleButton = document.querySelector("#scale-button");
 const resetButton = document.querySelector("#reset-button");
 const greyScaleButton = document.querySelector("#greyscale-button");
 const rainbowButton = document.querySelector("#rainbow-button");
-const workingArea = document.querySelector("#working-area");
 greyScaleButton.disabled = true;
 
 makeGrid(16);
@@ -38,7 +37,7 @@ resetButton.addEventListener("click", () => {
     cells.forEach((cell) => {
         cell.style.backgroundColor = "white";
     });
-    workingArea.style.backgroundColor = "white";
+    grid.style.backgroundColor = "white";
 });
 
 greyScaleButton.addEventListener("click", () => {
