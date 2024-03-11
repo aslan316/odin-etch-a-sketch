@@ -16,6 +16,10 @@ div {
     border-radius: 15px;
 }
 
+.cell {
+    border-radius: 0;
+}
+
 button {
     color: rgb(159, 209, 129);
     background-color: rgb(34,49,29);
@@ -25,6 +29,21 @@ button {
     border-radius: 20px;
     width: 150px;
     height: 60px;
+}
+
+#greyscale-button {
+    color: rgb(34,49,29);
+    background-color: rgb(159, 209, 129);
+    border: 4px solid rgb(34,49,29);
+}
+
+#rainbow-button {
+    color: rgb(159, 209, 129);
+    background-color: rgb(34,49,29);
+}
+
+h3 {
+    color: rgb(34,49,29);
 }
 
 #title {
@@ -49,6 +68,11 @@ button {
     gap: 10px;
 }
 
+#grid-lable,
+#stylus-lable {
+    margin-bottom: -3px;
+}
+
 #working-area {
     background-color: rgb(175, 210, 154);
     padding: 20px;
@@ -60,6 +84,8 @@ button {
 #grid {
     background-color: rgb(255, 255, 255);
     border-radius: 0;
-    width: 640px;
-    height: 480px;
+    width: 560px;
+    height: 560px;
+    display: flex;
+    flex-wrap: wrap;
 }
